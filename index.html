@@ -10,12 +10,12 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header id="header" class="header lock-padding">
             <div class="header__container _container">
                 <a href="" class="header__logo ">
                     <img src="images/header/LOGO.png" alt="LOGO">
@@ -54,8 +54,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="nav-bar__button button">
-                        <a href="" class="button__link">ЗАКАЗ СТОЛИКА</a>
+                    <div class="nav-bar__button button ">
+                        <a href="#popup" class="button__link popup-link">ЗАКАЗ СТОЛИКА</a>
                     </div>
 
 
@@ -76,7 +76,7 @@
                         <h1 class="main-block__title">Наш ресторан</h1>
                         <div class="main-block__text">ДОМ ЛУЧШЕЙ ЕДЫ</div>
                         <div class="main-block__button ">
-                            <a href="" class="main-block__link"> VIEW MENU</a>
+                            <a data-goto=".dishes" href="" class="main-block__link "> МЕНЮ</a>
                         </div>
                     </div>
                 </div>
@@ -172,8 +172,8 @@
                             </div>
 
                         </div>
-                        <div class="offer__button button-offer">
-                            <a href="" class="button-offer__link">ЗАКАЗ СТОЛИКА</a>
+                        <div class="offer__button button-offer ">
+                            <a href="#popup" class="button-offer__link popup-link">ЗАКАЗ СТОЛИКА</a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +191,7 @@
                             <img  class="item-dishes__image" src="images/dishes/2.png" alt="1">
                         </div>
                         <div class="dishes__item item-dishes item-dishes_2">
-                            <img class="item-dishes__image" src="images/dishes/2.png" alt="2">
+                            <img class="item-dishes__image" src=images/dishes/2.png" alt="2">
                         </div>
                         <div class="dishes__item  item-dishes item-dishes_3">
                             <img class="item-dishes__image" src="images/dishes/2.png" alt="3">
@@ -483,27 +483,27 @@
                             </div>
                             <div class="cook__slide swiper-slide">
                                 <div class="cook__item item-cook">
-                                    <img src="images/cook/3.png" alt="">
+                                    <img src=">images/cook/3.png" alt="">
                                 </div>
                             </div>
                             <div class="cook__slide swiper-slide">
                                 <div class="cook__item item-cook">
-                                    <img src="images/cook/1.png" alt="">
+                                    <img src=">images/cook/1.png" alt="">
                                 </div>
                             </div>
                             <div class="cook__slide swiper-slide">
                                 <div class="cook__item item-cook">
-                                    <img src="images/cook/2.png" alt="">
+                                    <img src=">images/cook/2.png" alt="">
                                 </div>
                             </div>
                             <div class="cook__slide swiper-slide">
                                 <div class="cook__item item-cook">
-                                    <img src="images/cook/3.png" alt="">
+                                    <img src=">images/cook/3.png" alt="">
                                 </div>
                             </div>
                             <div class="cook__slide swiper-slide">
                                 <div class="cook__item item-cook">
-                                    <img src="images/cook/1.png" alt="">
+                                    <img src=">images/cook/1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -527,9 +527,38 @@
             </div>
            
         </footer>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close close-popup">X</a>
+                    <div class="popup__title">ЗАКАЗ СТОЛИКА</div>
+                    <div class="popup__subtitle">графік роботи: безвихідних</div>
+                    <div class="popup__time">З 9:00 до 22:00</div>
+                    <a href="tel:9998887654" class="popup__tel ">+999-888-76-54</a>
+    
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-up">
+            <svg classs="scroll-up__svg" viewBox = "-2 -2 52 52">
+                <path
+                    class="scroll-up__svg-path"
+                    d= "
+                         M24,0
+                        a24,24 0 0,1 0,48
+                        a24,24 0 0,1 0,-48
+                    "
+                />    
+            </svg>
+        </div>
     </div>
+
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/burger menu.js"></script>
+    <script src="js/scroll.js"></script>
    
 </body>
 </html>
